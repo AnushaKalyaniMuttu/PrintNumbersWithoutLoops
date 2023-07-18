@@ -1,0 +1,15 @@
+package com.demo;
+
+import java.util.stream.IntStream;
+
+public class Print1To10WithoutLoops {
+	 public static void main(String[] args) {
+		//print one to 10 without while and do while
+		 
+		 IntStream.range(1, 11)
+		 .boxed()
+		 .mapToInt(Integer::intValue)
+		 .forEach(System.out::println);
+		 
+	 }
+	}
